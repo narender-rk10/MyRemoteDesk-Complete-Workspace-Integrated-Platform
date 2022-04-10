@@ -7,9 +7,9 @@
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
 ## PROJECT MEMBERS:
-# NARENDER KESWANI
-# PRATHAMESH BHOSALE
-# CHINMAY VYAPARI
+NARENDER KESWANI <br/>
+PRATHAMESH BHOSALE <br/>
+CHINMAY VYAPARI <br/>
 
 ## TECH STACK:
 
@@ -218,7 +218,7 @@ Check on localhost:3000
 ![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/117.jpg)
 ![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/118.png)
 ![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/119.png)
-![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/120.png)
+![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/120.jpg)
 ![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/121.png)
 ![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/122.png)
 ![Screenshot](https://raw.github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/master/SCREENSHOTS/123.png)
