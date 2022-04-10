@@ -5,6 +5,41 @@
 # LICENSE:
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
+## PROJECT MEMBERS:
+
+## HOW TO RUN PROJECT:
+
+# WEB APP:
+<pre>
+<code>
+pip install -r requirements.txt
+cd MyRemoteDeskWebApp
+python manage.py runserver
+
+Check on localhost:8000
+</code>
+</pre>
+
+# DESKTOP APP:
+<pre>
+<code>
+cd MyRemoteDeskDesktopApp
+npm install
+nm start
+</code>
+</pre>
+
+# VIDEO APP:
+<pre>
+<code>
+cd MyRemoteDeskVideoApp
+npm install
+nm start
+
+Check on localhost:3000
+</code>
+</pre>
+
 ## PROPOSED SYSTEM
 # A) Employee Management System
 1) Login, Register, Forgot Password, Change Password, OTP Verification [Both sides Organization & Employee]
