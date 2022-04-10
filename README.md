@@ -9,10 +9,11 @@
 
 ## TECH STACK:
 
-Django
-Electron JS
-Node JS
-MySQL
+Python <br/>
+Django <br/>
+Electron JS <br/>
+Node JS <br/>
+MySQL <br/>
 HTML,CSS,JS,BOOTSTRAP5
 
 ## HOW TO RUN PROJECT:
