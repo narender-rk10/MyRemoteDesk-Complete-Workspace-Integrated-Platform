@@ -7,6 +7,14 @@
 
 ## PROJECT MEMBERS:
 
+## TECH STACK:
+
+Django
+Electron JS
+Node JS
+MySQL
+HTML,CSS,JS,BOOTSTRAP5
+
 ## HOW TO RUN PROJECT:
 
 # WEB APP:
