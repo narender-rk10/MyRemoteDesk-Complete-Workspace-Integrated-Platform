@@ -38,7 +38,7 @@ Check on localhost:8000
 <code>
 cd MyRemoteDeskDesktopApp
 npm install
-nm start
+npm start
 </code>
 </pre>
 
@@ -47,7 +47,7 @@ nm start
 <code>
 cd MyRemoteDeskVideoApp
 npm install
-nm start
+npm start
 
 Check on localhost:3000
 </code>
