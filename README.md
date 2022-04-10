@@ -27,6 +27,8 @@ HTML,CSS,JS,BOOTSTRAP5
 <code>
 pip install -r requirements.txt
 cd MyRemoteDeskWebApp
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 
 Check on localhost:8000
