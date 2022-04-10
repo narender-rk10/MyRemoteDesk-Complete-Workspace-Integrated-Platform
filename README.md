@@ -1,11 +1,15 @@
 # MyRemoteDesk-Complete-Workspace-Integrated-Platform
 
 # YOUTUBE LINK OF THE PROJECT:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/01Qgv6gNsNo/0.jpg)](https://youtu.be/01Qgv6gNsNo)
 
 # LICENSE:
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
 ## PROJECT MEMBERS:
+# NARENDER KESWANI
+# PRATHAMESH BHOSALE
+# CHINMAY VYAPARI
 
 ## TECH STACK:
 
