@@ -1,0 +1,42 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <div class="col-lg-12 col-sm-16">
+                            <h3 class="h3 text-center">Add Project</h3>
+                        </div>
+                    </div>
+                    <center>
+                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_cwA7Cn.json"
+                            background="transparent" speed="1" style="width: 400px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </center>
+                    <div class="card-body">
+                        <form action="/create-proj" method="POST">
+                            {% csrf_token %}
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label class="h6" for="exampleFormControlTextarea1">Project Name:</label>
+
+                                    <input type="text" name="p_name" class="form-control" placeholder="Name of Project"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="h6" for="exampleFormControlTextarea1">Project Description:</label>
+
+                                    <textarea name="p_desc" class="form-control" placeholder="Project Description"
+                                        rows="6" required></textarea>
+                                </div>
+                                <input type="submit" class="btn btn-primary" value="Add">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

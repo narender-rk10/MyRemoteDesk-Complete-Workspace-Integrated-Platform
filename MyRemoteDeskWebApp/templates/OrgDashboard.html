@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MyRemoteDesk</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- Volt CSS -->
+    <link type="text/css" rel="stylesheet" href="/static/html/css/volt.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
+    <script src="/static/visuals/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-tooltip.js"></script>
+    <!-- <script src="/static/visuals/custom.js"></script> -->
+    <script src="/static/visuals/echarts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.js"
+        integrity="sha512-taR40V17AK2+3RjqzCYkczb0/hTHuQCid0kBs0I2g6DqkFjkTcAIpsa+4PzGuWcRica2AOZQmz4pNPj4InFR8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.common.js"
+        integrity="sha512-kn4fARiLsrEj4/9vta8QR9+MmC40x+zuc7M+tihnyZk6hZrQkkxGaHrIGCYE6VZnIY/pOgLhDyqtOLtg/XenuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.common.js"
+        integrity="sha512-kn4fARiLsrEj4/9vta8QR9+MmC40x+zuc7M+tihnyZk6hZrQkkxGaHrIGCYE6VZnIY/pOgLhDyqtOLtg/XenuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.esm.js"
+        integrity="sha512-F+O/wYuPFPhKr+2lkkyK64aTUQD0FWytFO8LRxVnobX6rYcrUS7OPj+k5yk/mEe5SNZ3PbljhnjRNdnIM8yDqg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.css"
+        integrity="sha512-HGWrJz+Lr07phD0DNoLsSVwn3przno/eSLf1cGOrLzr6c7NUZROZJPhQdSPmLHNbsO0HP2UfUnpKTMiVxonEHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!--Lottie Js-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-md-none">
+        <a class="navbar-brand me-lg-5" href="/org_index">
+            <center>
+                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_wEt2nn.json" background="transparent"
+                    speed="1" style="width: 75px; height: 50px;" loop autoplay></lottie-player>
+            </center>
+        </a>
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <nav id="sidebarMenu" class="sidebar d-md-block bg-dark text-white flex-md-column flex-row collapse" data-simplebar>
+        <div class="sidebar-inner px-4 pt-3">
+            <div
+                class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+                <div class="d-flex align-items-center">
+                    <div class="user-avatar lg-avatar me-4">
+                        <img src="/static/html/assets/img/user-profile.png"
+                            class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                    </div>
+                    <div class="d-block">
+                        <h2 class="h6">{{request.session.o_name.upper}}</h2>
+                        <a href="#" onclick="funLogout()" class="btn btn-secondary text-dark btn-xs"><span
+                                class="me-2"><span class="fas fa-sign-out-alt"></span></span>Logout</a>
+                    </div>
+                </div>
+                <div class="collapse-close d-md-none">
+                    <a href="#sidebarMenu" class="fas fa-times" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                        aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation"></a>
+                </div>
+            </div>
+
+            <ul class="nav flex-column pt-3 pt-md-0">
+                <li class="nav-item">
+                    <h2 class="h6">Hi, {{request.session.o_name.upper}}</h2>
+                    <h2 class="h6" id="activeEmps"></h2>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Employee</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create-emp">
+                                    <span class="sidebar-text">Add</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/read-emp">
+                                    <span class="sidebar-text">View & Edit</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/org-view-attendance">
+                                    <span class="sidebar-text">View Attendance</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/emp-leaves">
+                                    <span class="sidebar-text">Employee Leaves</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components3">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Monitoring</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components3" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/view-app-web">
+                                    <span class="sidebar-text">View Logs</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/depth-view-app-web">
+                                    <span class="sidebar-text">Detail View Logs</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/ss-monitoring">
+                                    <span class="sidebar-text">Screenshots Logs</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/power-monitoring">
+                                    <span class="sidebar-text">Power Monitoring Logs</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components4">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Projects</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components4" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create-proj">
+                                    <span class="sidebar-text">Create Projects</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/read-proj">
+                                    <span class="sidebar-text">View Projects</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/assign-proj">
+                                    <span class="sidebar-text">Assign Projects</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/select-unassign">
+                                    <span class="sidebar-text">Unassign Projects</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components5">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Boards</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components5" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create-board">
+                                    <span class="sidebar-text">Add Board</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/read-boards">
+                                    <span class="sidebar-text">View Boards</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components6">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Productivity</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components6" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create-wp">
+                                    <span class="sidebar-text">Add DataSet</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/edit-wp">
+                                    <span class="sidebar-text">View & Edit DataSet</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/work-productivity-check">
+                                    <span class="sidebar-text">Check Emp Productivity</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/logDashboard">
+                                    <span class="sidebar-text">Monitoring PieChart</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/rank-productivity">
+                                    <span class="sidebar-text">Emp. Ranking</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components2">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Tasks</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components2" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/overview-task">
+                                    <span class="sidebar-text">Task Overview</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create-task">
+                                    <span class="sidebar-text">Create Task</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/read-task">
+                                    <span class="sidebar-text">View & Edit Tasks</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components1">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Meetings</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components1" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create-meet">
+                                    <span class="sidebar-text">Create Meeting</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/read-meet">
+                                    <span class="sidebar-text">View Meetings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#submenu-components7">
+                        <span>
+                            <span class="sidebar-icon"><span class="fas fa-plus"></span></span>
+                            <span class="sidebar-text">Notices</span>
+                        </span>
+                        <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+                    </span>
+                    <div class="multi-level collapse " role="list" id="submenu-components7" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/overview-notice">
+                                    <span class="sidebar-text">Notices Overview</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create-notice">
+                                    <span class="sidebar-text">Create Notice</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/read-notice">
+                                    <span class="sidebar-text">View Notices</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </li>
+                <li role="separator" class="dropdown-divider mt-4 mb-3 border-black"></li>
+                <li class="nav-item ">
+                    <a href="/org_report_problems" class="nav-link">
+                        <span class="sidebar-icon"><span class="fas fa-bug"></span></span>
+                        <span class="sidebar-text">Report Problems</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/org_change_password" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon"><span class="fas fa-key"></span></span>
+                        <span class="sidebar-text">Change Password</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" onclick="funLogout()"
+                        class="btn btn-secondary d-flex align-items-center justify-content-center">
+                        <span class="sidebar-icon"><span class="fas fa-sign-out-alt"></span></span> <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0">
+            <div class="container-fluid px-0">
+                <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+                    <div class="h-100 row align-items-center">
+                        {% include 'includes/_messages.html' %}
+                        {% block body %}{% endblock %}
+
+                        <footer id="sticky-footer" class="py-4">
+                            <div class="d-flex text-center justify-content-center align-items-center"
+                                role="contentinfo">
+                                <p class="font-weight-bold font-medium mb-0">Copyright © MyRemoteDesk
+                                    <span class="current-year">
+                                        <script>document.write(new Date().getFullYear())</script>
+                                    </span>. All rights reserved.
+                                </p>
+                            </div><br>
+                            <div class="d-flex text-center justify-content-center align-items-center"
+                                role="contentinfo">
+                                <p class="font-weight-bold font-small mb-0"><span><a
+                                            href="https://www.narenderkeswani.com/">Made with &#128151 By NARENDER
+                                            KESWANI</a></span><span> , PRATHAMESH BHOSALE & CHINMAY VPAPARI</span></p>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </main>
+    <script>
+        request_url = 'get_emp_logged_in_count_today';
+            $.ajax({
+                url: request_url,
+                success: function (data) {
+                    console.log("Responsee");
+                    console.log(data['logged_in_count']);
+                    let logged_in_count = data['logged_in_count'];
+                    let total_emps = data['total_emps'];
+                    document.getElementById('activeEmps').innerHTML = 'Active: ' + logged_in_count + '/' + total_emps;
+                },
+                errors: function (e) {
+                    alert(e);
+                }
+            });
+        function funLogout() {
+
+            swal.fire({
+                title: 'Are you sure?',
+                text: "Do you really want to logout?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, Logout me!',
+                cancelButtonText: 'No!',
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#202124',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/logout",
+                        success: function (response) {
+                            if (response == "success") {
+                                console.log(response);
+                                window.location.href = "http://localhost:8000/";
+                            }
+                            else {
+                                console.log("logout: error");
+                                window.location.href = "http://localhost:8000/";
+                            }
+                        }
+                    });
+                    swal.fire(
+                        'Success!',
+                        'You are successfully has been sign out from the system.',
+                        'success'
+                    )
+                } else if (
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swal.fire(
+                        'Cancelled',
+                        'Logout cancelled.',
+                        'error'
+                    )
+                }
+            })
+        }
+
+    </script>
+
+    <!-- Core -->
+    <script src="/static/html/vendor/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="/static/html/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="/static/html/vendor/onscreen/dist/on-screen.umd.min.js"></script>
+
+    <!-- Slider -->
+    <script src="/static/html/vendor/nouislider/dist/nouislider.min.js"></script>
+
+    <!-- Smooth scroll -->
+    <script src="/static/html/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Charts -->
+    <script src="/static/html/vendor/chartist/dist/chartist.min.css"></script>
+    <script src="/static/html/vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src="/static/html/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+    <!-- Sweet Alerts 2 -->
+    <script src="/static/html/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+    <!-- Vanilla JS Datepicker -->
+    <script src="/static/html/vendor/vanillajs-datepicker/dist/js/datepicker-full.min.js"></script>
+
+    <!-- Notyf -->
+    <script src="/static/html/vendor/notyf/notyf.min.js"></script>
+
+    <!-- Simplebar -->
+    <script src="/static/html/vendor/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Volt JS -->
+    <script src="/static/html/assets/js/volt.js"></script>
+
+</body>
+
+</html>

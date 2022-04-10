@@ -1,0 +1,394 @@
+{
+    "activities": [
+        {
+            "name": "meet.google.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:49:18",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 51,
+                    "start_time": "2022-04-05 19:48:26"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:49:27",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:49:26"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:50:46",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 7,
+                    "start_time": "2022-04-05 19:50:39"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:51:40",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 24,
+                    "start_time": "2022-04-05 19:51:15"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:53:41",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 28,
+                    "start_time": "2022-04-05 19:53:13"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:54:28",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 23,
+                    "start_time": "2022-04-05 19:54:05"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:59:03",
+                    "hours": 0,
+                    "minutes": 3,
+                    "seconds": 2,
+                    "start_time": "2022-04-05 19:56:01"
+                }
+            ]
+        },
+        {
+            "name": "github.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:49:20",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:49:18"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:49:25",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5,
+                    "start_time": "2022-04-05 19:49:20"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:49:29",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:49:27"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:50:07",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 36,
+                    "start_time": "2022-04-05 19:49:30"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:50:22",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2022-04-05 19:50:19"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:50:39",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2022-04-05 19:50:34"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:52:25",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2022-04-05 19:52:22"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:53:13",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 7,
+                    "start_time": "2022-04-05 19:53:06"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:53:47",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2022-04-05 19:53:45"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:54:05",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2022-04-05 19:54:01"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:54:40",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 9,
+                    "start_time": "2022-04-05 19:54:30"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:55:44",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 9,
+                    "start_time": "2022-04-05 19:55:34"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:56:01",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 7,
+                    "start_time": "2022-04-05 19:55:53"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:59:05",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:59:03"
+                }
+            ]
+        },
+        {
+            "name": "SS IMPLEMENTATION MINI PROJECT.docx - Word",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:49:30",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:49:29"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:50:34",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 8,
+                    "start_time": "2022-04-05 19:50:25"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:52:22",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 40,
+                    "start_time": "2022-04-05 19:51:41"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:53:06",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 9,
+                    "start_time": "2022-04-05 19:52:56"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:53:45",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2022-04-05 19:53:41"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:54:01",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 13,
+                    "start_time": "2022-04-05 19:53:47"
+                }
+            ]
+        },
+        {
+            "name": "Save As",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:50:19",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 12,
+                    "start_time": "2022-04-05 19:50:07"
+                }
+            ]
+        },
+        {
+            "name": "Downloads",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:50:25",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2022-04-05 19:50:22"
+                }
+            ]
+        },
+        {
+            "name": "MySQL Workbench",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:51:15",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 28,
+                    "start_time": "2022-04-05 19:50:46"
+                }
+            ]
+        },
+        {
+            "name": "leetcode.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:51:41",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:51:40"
+                }
+            ]
+        },
+        {
+            "name": "localhost:8000",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:52:56",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 31,
+                    "start_time": "2022-04-05 19:52:25"
+                }
+            ]
+        },
+        {
+            "name": "web.whatsapp.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:54:30",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:54:28"
+                }
+            ]
+        },
+        {
+            "name": "MyRemoteDesk",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:54:43",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2022-04-05 19:54:40"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:55:06",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 1,
+                    "start_time": "2022-04-05 19:55:04"
+                }
+            ]
+        },
+        {
+            "name": "Desktop",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:55:04",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 21,
+                    "start_time": "2022-04-05 19:54:43"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:55:13",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 7,
+                    "start_time": "2022-04-05 19:55:06"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:55:34",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2022-04-05 19:55:30"
+                }
+            ]
+        },
+        {
+            "name": "Compressing...",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:55:30",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 16,
+                    "start_time": "2022-04-05 19:55:13"
+                }
+            ]
+        },
+        {
+            "name": "Open",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2022-04-05 19:55:53",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 9,
+                    "start_time": "2022-04-05 19:55:44"
+                }
+            ]
+        }
+    ]
+}

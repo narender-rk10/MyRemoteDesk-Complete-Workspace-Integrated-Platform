@@ -1,0 +1,53 @@
+<head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="linkers/app.js"></script>
+</head>
+
+<body>
+  <br>
+  <div class="container">
+
+    <h2 id="wel" style="font-weight:bold"></h2>
+    <br/><br/>
+          <input type="button" id="start" class="btn btn-primary" onclick="initMonitoring();" value="Mark your attendance & Start Monitoring!" />
+          <div id="animationStart">
+            <input type="button" id="stop" class="btn btn-danger" onclick="monitoringApp('0');" value="Mark your attendance & Stop Monitoring!" />
+          <img src="../gui/images/29413-hosting.gif" height="300px" width="300px"/>
+          <br/>
+          <h4 style="font-weight:bold">Note: Your Logs are been recorded...</h4>
+          </div>
+
+  </div>
+  <script>
+    document.getElementById('stop').style.visibility = 'hidden';
+    document.getElementById('animationStart').style.visibility = 'hidden';
+    document.getElementById("wel").innerHTML = "Welcome to MyRemoteDesk \n  "+ sessionStorage.getItem("e_name").toUpperCase();
+
+    function initMonitoring()
+    {
+      Swal.fire({
+        title: 'Do you want to start monitoring?',
+        text: "All your activities will be sended to system such as screenshots, app track usage, battery status, etc and this cannot be undone! ",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Start monitoring!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+       monitoringApp('1')
+        }
+      })
+    }
+    
+  </script>
+<body>

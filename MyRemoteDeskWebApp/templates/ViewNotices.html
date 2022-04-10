@@ -1,0 +1,56 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+{% csrf_token %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">View Notices</h3>
+                    </div>
+
+                    {% if notices is not none and notices %}
+                    <img src="/static/html/assets/img/undraw_Online_information_re_erks.png">
+
+                    {% for notice in notices %}
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{notice.on_title}}</h5>
+                            <p class="card-text">{{notice.on_desc}}</p>
+                            <br />
+                            <p class="card-text"> Created/Updated Time:
+                                {% load tz %}
+                                {% timezone "Asia/Kolkata" %}
+                                {{notice.on_date_time}}
+                                {% endtimezone %}
+                            </p>
+                            <a href="/update-notice/{{ notice.id }}/" method="POST" class="btn btn-secondary">Update</a>
+                            <a href="{% url 'delete-notice' notice.id  %}" method="POST"
+                                class="btn btn-danger">Delete</a>
+
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    {% endfor %}
+
+                    {% else %}
+                    <div class="col-lg-12 col-sm-16">
+                        <center>
+                            <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json"
+                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                            </lottie-player>
+                        </center>
+                        <h3 class="h3 text-center">
+                            No Records Found!
+                        </h3>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

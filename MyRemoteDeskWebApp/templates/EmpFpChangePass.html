@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+{% block body %}
+<main>
+    <section class="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
+        <div class="container">
+            <div class="row justify-content-center form-bg-image"
+                data-background-lg="../../assets/img/illustrations/signin.svg">
+                {% if msg == "0" %}
+                <div class="alert alert-danger" role="alert">
+
+                </div>
+                {% endif %}
+                {% if msg == "1" %}
+                <div class="alert alert-danger" role="alert">
+                    OTP was not matched!
+                </div>
+                {% endif %}
+                {% if msg == "11" %}
+                <div class="alert alert-danger" role="alert">
+                    Password was not matched or Some Error was occurred!
+                </div>
+                {% endif %}
+                {% if msg == "10" %}
+                <div class="alert alert-success" role="alert">
+                    Password was reset and changed successfully!
+                </div>
+                {% endif %}
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                        <div class="text-center text-md-center mb-4 mt-md-0">
+                            <h1 class="mb-0 h3">OTP Verification of Forgot Password for User</h1>
+                        </div>
+                        <img src="/static/html/assets/img/forgot_password.png">
+                        <form method="POST" action="/user-forgot-password-change-pass" class="mt-4">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleInputIcon3">Password</label>
+                                <div class="input-group mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><span class="fas fa-unlock-alt"></span></span>
+                                    </div>
+                                    <input name="pwd1" type="password" class="form-control"
+                                        placeholder="Enter your password" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword6">Confirm Password</label>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><span
+                                                    class="fas fa-unlock-alt"></span></span>
+                                        </div>
+                                        <input name="pwd2" type="password" class="form-control"
+                                            id="exampleInputPassword6" placeholder="Enter your password again" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-primary">Reset Password</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

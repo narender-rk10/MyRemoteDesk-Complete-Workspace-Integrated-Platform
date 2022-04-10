@@ -1,0 +1,59 @@
+{% extends 'EmpDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">View Employee Depth Monitoring Logs</h3>
+                    </div>
+                    {% if msg is not none and msg %}
+                    <div class="table-responsive">
+                        <table id="exampleMoni" class="display nowrap" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Sr. No.</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for result in msg %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{result.md_title}}</td>
+                                    <td>{{result.md_total_time_seconds}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="col-lg-12 col-sm-16">
+                        <center>
+                            <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json"
+                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                            </lottie-player>
+                        </center>
+                        <h3 class="h3 text-center">
+                            No Records Found!
+                        </h3>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#exampleMoni').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+    });
+</script>
+{% endblock %}

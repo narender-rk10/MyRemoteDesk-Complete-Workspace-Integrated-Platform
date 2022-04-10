@@ -1,0 +1,52 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">Add Employee</h3>
+                    </div>
+                    <center>
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_2jbzmbru.json"
+                            background="transparent" speed="1" style="width: 400px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </center>
+                    <div class="card-body">
+                        <form action="/create-emp" method="POST">
+                            {% csrf_token %}
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label class="h6" for="exampleFormControlTextarea1">Full Name:</label>
+                                    <input type="text" name="e_name" class="form-control" placeholder="Name of Employee" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="h6" for="exampleFormControlTextarea1">Email Address:</label>
+                                    <input type="email" name="e_email" class="form-control" placeholder="Email of Employee" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="h6" for="exampleFormControlTextarea1">Contact Number:</label>
+                                    <input type="number" name="e_contact" class="form-control" placeholder="Contact of Employee" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Choose Gender of Employee:</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="e_gender" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="transgender">Transgender</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="h6" for="exampleFormControlTextarea1">Address of Employee</label>
+                                        <textarea name="e_address" class="form-control" placeholder="Address of Employee" rows="6" required></textarea>
+                                </div>                            
+                                <input type="submit" class="btn btn-primary" value="Add">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

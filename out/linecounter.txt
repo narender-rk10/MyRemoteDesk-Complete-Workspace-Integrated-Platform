@@ -1,0 +1,912 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2022-04-10 22:52:38
+count workspace : c:\Users\NARENDER KESWANI\Desktop\MyRemoteDeskIntegrated
+total files : 882
+total code lines : 90155
+total comment lines : 4357
+total blank lines : 11155
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .py|           2345|             26|            313|    2.6|
+   |          .json|          14040|              0|             11|     16|
+   |            .js|          16103|           2540|           2858|     18|
+   |          .html|          16000|           1169|            945|     18|
+   |          .scss|           4732|            364|            987|    5.2|
+   |           .svg|          13462|              0|             40|     15|
+   |           .txt|             56|              0|              5|  0.062|
+   |           .css|          22944|            183|           5938|     25|
+   |           .gyp|             73|              0|              1|  0.081|
+   |               |            337|             69|             51|   0.37|
+   |          .flow|              6|              6|              6| 0.0067|
+   |   .webmanifest|             38|              0|              0|  0.042|
+   |           .xml|             18|              0|              0|  0.020|
+   |           .map|              1|              0|              0| 0.0011|
+   -------------------------------------------------------------------------
+MyRemoteDeskDesktopApp\activities.json, code is 394, comment is 0, blank is 0.
+MyRemoteDeskDesktopApp\engine\__pycache__\apptrack.cpython-36.pyc, it is a binary file.
+MyRemoteDeskDesktopApp\engine\__pycache__\moni.cpython-36.pyc, it is a binary file.
+MyRemoteDeskDesktopApp\engine\__pycache__\moniSS.cpython-36.pyc, it is a binary file.
+MyRemoteDeskDesktopApp\engine\destroyApp.py, code is 19, comment is 0, blank is 5.
+MyRemoteDeskDesktopApp\engine\initApp.py, code is 7, comment is 0, blank is 3.
+MyRemoteDeskDesktopApp\engine\moni.py, code is 209, comment is 0, blank is 48.
+MyRemoteDeskDesktopApp\gui\app.html, code is 48, comment is 0, blank is 5.
+MyRemoteDeskDesktopApp\gui\gui.html, code is 30, comment is 0, blank is 3.
+MyRemoteDeskDesktopApp\gui\images\29413-hosting.gif, it is a binary file.
+MyRemoteDeskDesktopApp\gui\images\7697-cc-camera.gif, it is a binary file.
+MyRemoteDeskDesktopApp\gui\linkers\app.js, code is 329, comment is 13, blank is 50.
+MyRemoteDeskDesktopApp\gui\linkers\login.js, code is 48, comment is 0, blank is 5.
+MyRemoteDeskDesktopApp\main.js, code is 26, comment is 22, blank is 11.
+MyRemoteDeskDesktopApp\package-lock.json, code is 3035, comment is 0, blank is 3.
+MyRemoteDeskDesktopApp\package.json, code is 20, comment is 0, blank is 0.
+MyRemoteDeskDesktopApp\renderer.js, code is 0, comment is 3, blank is 0.
+MyRemoteDeskVideoApp\package-lock.json, code is 3517, comment is 0, blank is 1.
+MyRemoteDeskVideoApp\package.json, code is 32, comment is 0, blank is 1.
+MyRemoteDeskVideoApp\src\app.js, code is 14, comment is 0, blank is 5.
+MyRemoteDeskVideoApp\src\assets\css\app.css, code is 183, comment is 0, blank is 49.
+MyRemoteDeskVideoApp\src\assets\js\autolink.js, code is 31, comment is 5, blank is 3.
+MyRemoteDeskVideoApp\src\assets\js\events.js, code is 80, comment is 16, blank is 30.
+MyRemoteDeskVideoApp\src\assets\js\helpers.js, code is 234, comment is 3, blank is 84.
+MyRemoteDeskVideoApp\src\assets\js\rtc.js, code is 329, comment is 32, blank is 135.
+MyRemoteDeskVideoApp\src\favicon.ico, it is a binary file.
+MyRemoteDeskVideoApp\src\index.html, code is 126, comment is 0, blank is 28.
+MyRemoteDeskVideoApp\src\ws\stream.js, code is 22, comment is 2, blank is 10.
+MyRemoteDeskWebApp\app\__init__.py, code is 0, comment is 0, blank is 0.
+MyRemoteDeskWebApp\app\__pycache__\__init__.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\__pycache__\admin.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\__pycache__\models.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\__pycache__\views.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\admin.py, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\app\apps.py, code is 3, comment is 0, blank is 2.
+MyRemoteDeskWebApp\app\forms.py, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\app\migrations\0001_initial.py, code is 177, comment is 1, blank is 8.
+MyRemoteDeskWebApp\app\migrations\0002_auto_20220314_1352.py, code is 28, comment is 1, blank is 5.
+MyRemoteDeskWebApp\app\migrations\0003_attendancelogs_groupchat_leaves_organizationnews_workproductivitydataset.py, code is 81, comment is 1, blank is 5.
+MyRemoteDeskWebApp\app\migrations\0004_auto_20220314_1634.py, code is 12, comment is 1, blank is 5.
+MyRemoteDeskWebApp\app\migrations\0005_delete_groupchat.py, code is 10, comment is 1, blank is 5.
+MyRemoteDeskWebApp\app\migrations\0006_groupchat.py, code is 22, comment is 1, blank is 5.
+MyRemoteDeskWebApp\app\migrations\0007_delete_groupchat.py, code is 10, comment is 1, blank is 5.
+MyRemoteDeskWebApp\app\migrations\__init__.py, code is 0, comment is 0, blank is 0.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0001_initial.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220109_1949.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220124_0007.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220128_0101.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220203_1928.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220314_1339.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220314_1349.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220314_1350.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_auto_20220314_1352.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0002_powermonitoring.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0003_attendancelogs_groupchat_leaves_organizationnews_workproductivitydataset.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0003_auto_20220129_1716.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0003_auto_20220203_1916.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0003_auto_20220314_1340.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0003_delete_task.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0004_auto_20220314_1341.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0004_auto_20220314_1634.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0004_task.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0005_auto_20220314_1342.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0005_delete_groupchat.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0005_delete_task.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0006_attendancelogs_leaves.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0006_groupchat.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0006_task.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0007_auto_20220314_1344.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0007_delete_groupchat.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0007_workproductivitydataset.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0008_delete_groupchat.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0008_delete_workproductivitydataset.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0009_workproductivitydataset.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0010_delete_attendancelogs.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0011_attendancelogs.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0012_delete_attendancelogs.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0013_attendancelogs.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0014_delete_attendancelogs.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0015_attendancelogs.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0016_auto_20220214_1245.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0017_delete_organizationnews.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0018_organizationnews.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0019_delete_organizationnews.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0020_organizationnews.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0021_auto_20220214_2213.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0022_auto_20220215_0119.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0023_auto_20220215_0131.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0024_delete_leaves.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\0025_leaves.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\migrations\__pycache__\__init__.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\app\models.py, code is 133, comment is 1, blank is 40.
+MyRemoteDeskWebApp\app\tests.py, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\app\views.py, code is 1422, comment is 1, blank is 112.
+MyRemoteDeskWebApp\classes_project.pdf, it is a binary file.
+MyRemoteDeskWebApp\manage.py, code is 12, comment is 1, blank is 8.
+MyRemoteDeskWebApp\myapp_models.png, it is a binary file.
+MyRemoteDeskWebApp\MyRemoteDesk\__init__.py, code is 0, comment is 0, blank is 0.
+MyRemoteDeskWebApp\MyRemoteDesk\__pycache__\__init__.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\MyRemoteDesk\__pycache__\settings.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\MyRemoteDesk\__pycache__\urls.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\MyRemoteDesk\__pycache__\wsgi.cpython-36.pyc, it is a binary file.
+MyRemoteDeskWebApp\MyRemoteDesk\asgi.py, code is 4, comment is 0, blank is 5.
+MyRemoteDeskWebApp\MyRemoteDesk\settings.py, code is 98, comment is 14, blank is 39.
+MyRemoteDeskWebApp\MyRemoteDesk\urls.py, code is 91, comment is 0, blank is 6.
+MyRemoteDeskWebApp\MyRemoteDesk\wsgi.py, code is 4, comment is 0, blank is 5.
+MyRemoteDeskWebApp\requirements.txt, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\07-application-usage.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\20-reports.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\5e738de17ea4ad3bc7625849_ill4.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\5e738de1f523aa6599c4b1c1_ill2.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\5e738de38fd6df29784ec1d6_ill3.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\5e8c63b23fc11bddb44045d7_track time from anywhere.svg, code is 259, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\announcement.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\authentication_cp.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\brand\dark.svg, code is 11, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\brand\light.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\contact_us_desc.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\del_throw.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\e13.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\e14.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\e16.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\e17.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\examcheck.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\android-chrome-192x192.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\android-chrome-512x512.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\apple-touch-icon.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\browserconfig.xml, code is 9, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\favicon-16x16.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\favicon-32x32.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\favicon.ico, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\manifest.json, code is 20, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\mstile-150x150.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\safari-pinned-tab.svg, code is 16, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\favicon\site.webmanifest, code is 19, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\feature-content-protection-2.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\feature-platform-2.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\feature-platform-4.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\flags\aland-islands.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\albania.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\algeria.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\american-samoa.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\anguilla.svg, code is 56, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\argentina.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\armenia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\australia.svg, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\austria.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\azerbaijan.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\bahrain.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\belarus.svg, code is 46, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\belgium.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\bolivia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\bosnia-and-herzegovina.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\botswana.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\brazil.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\bulgaria.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\cambodia.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\cameroon.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\canada.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\chile.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\china.svg, code is 17, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\colombia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\costa-rica.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\croatia.svg, code is 61, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\cuba.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\cyprus.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\czech-republic.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\denmark.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\ecuador.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\egypt.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\estonia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\ethiopia.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\finland.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\france.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\georgia.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\germany.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\greece.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\haiti.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\hong-kong.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\hungary.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\iceland.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\india.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\indonesia.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\iran.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\iraq.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\ireland.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\israel.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\italy.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\ivory-coast.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\japan.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\kazakhstan.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\kuwait.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\latvia.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\liechtenstein.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\lithuania.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\luxembourg.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\malaysia.svg, code is 47, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\mexico.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\mongolia.svg, code is 49, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\montenegro.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\nauru.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\netherlands.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\nicaragua.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\nigeria.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\norway.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\pakistan.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\panama.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\paraguay.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\peru.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\philippines.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\portugal.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\puerto-rico.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\republic-of-macedonia.svg, code is 48, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\republic-of-poland.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\romania.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\russia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\serbia.svg, code is 46, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\singapore.svg, code is 45, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\slovakia.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\slovenia.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\south-africa.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\south-korea.svg, code is 56, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\spain.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\sri-lanka.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\sweden.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\switzerland.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\taiwan.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\thailand.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\tunisia.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\turkey.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\ukraine.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\united-arab-emirates.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\united-kingdom.svg, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\united-states-of-america.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\united-states.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\uruguay.svg, code is 47, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\venezuela.svg, code is 48, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\flags\vietnam.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\forgot_password.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\group-working-1.gif, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\gulpfile.js, code is 214, comment is 15, blank is 28.
+MyRemoteDeskWebApp\static\html\assets\img\Hybrid_Workforce_Animated_Hero_Banner.gif, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\i11.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\i12.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\i13.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\i4.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\i5.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\i8.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\icons\github.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\icons\google-tag-manager.svg, code is 16, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\icons\google_analytics.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\illustrations\404.svg, code is 140, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\illustrations\500.svg, code is 138, comment is 0, blank is 5.
+MyRemoteDeskWebApp\static\html\assets\img\illustrations\bs5-illustrations.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\illustrations\signin.svg, code is 2090, comment is 0, blank is 15.
+MyRemoteDeskWebApp\static\html\assets\img\j1.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j10.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j11.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j12.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j2.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j3.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j4.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j5.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j6.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j7.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j8.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\j9.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\marker.svg, code is 2, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\megaphone.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\mysnackbarcss.css, code is 36, comment is 0, blank is 5.
+MyRemoteDeskWebApp\static\html\assets\img\otp_security.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\package-lock.json, code is 6917, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\package.json, code is 66, comment is 0, blank is 1.
+MyRemoteDeskWebApp\static\html\assets\img\pages\404.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\500.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\forgot-password.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\lock.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\mockup-presentation.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\overview.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\reset-password.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\settings.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\sign-in.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\sign-up.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\pages\transactions.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\paypal-logo.svg, code is 45, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\personal_information.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\professional-review.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\questions_desc.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\report_bug.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\sdk.js, code is 380, comment is 301, blank is 145.
+MyRemoteDeskWebApp\static\html\assets\img\secure_login.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\ss-snapshot.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\Stripe wordmark - blurple_lg.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\stripe_payments.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\target.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\technologies\bootstrap-5-logo.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\technologies\react-logo-primary.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\technologies\react-logo.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\technologies\vuejs-logo.svg, code is 8, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Add_tasks_re_s5yj.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Data_extraction_re_0rd3.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_data_processing_yrrv.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_monitor_iqpq.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_News_re_6uub.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Online_information_re_erks.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Performance_overview_re_mqrq.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Profile_data_re_v81r.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Remote_meeting_re_abe7.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_schedule_meeting_52nu.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Scrum_board_re_wk7v.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\undraw_Selecting_team_re_ndkb.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\img\user-profile.png, it is a binary file.
+MyRemoteDeskWebApp\static\html\assets\js\volt.js, code is 281, comment is 29, blank is 47.
+MyRemoteDeskWebApp\static\html\css\volt.css, code is 22675, comment is 126, blank is 5882.
+MyRemoteDeskWebApp\static\html\css\volt.css.map, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\index.html, code is 434, comment is 27, blank is 11.
+MyRemoteDeskWebApp\static\html\pages\components\buttons.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\components\forms.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\components\modals.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\components\notifications.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\components\typography.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\dashboard\dashboard.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\examples\404.html, code is 53, comment is 39, blank is 28.
+MyRemoteDeskWebApp\static\html\pages\examples\500.html, code is 40, comment is 26, blank is 13.
+MyRemoteDeskWebApp\static\html\pages\examples\forgot-password.html, code is 46, comment is 27, blank is 14.
+MyRemoteDeskWebApp\static\html\pages\examples\lock.html, code is 85, comment is 42, blank is 30.
+MyRemoteDeskWebApp\static\html\pages\examples\reset-password.html, code is 97, comment is 46, blank is 30.
+MyRemoteDeskWebApp\static\html\pages\examples\sign-in.html, code is 125, comment is 44, blank is 30.
+MyRemoteDeskWebApp\static\html\pages\examples\sign-up.html, code is 133, comment is 46, blank is 30.
+MyRemoteDeskWebApp\static\html\pages\settings.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\tables\bootstrap-tables.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\transactions.html, code is 357, comment is 31, blank is 16.
+MyRemoteDeskWebApp\static\html\pages\upgrade-to-pro.html, code is 437, comment is 38, blank is 33.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\cjs\popper-base.js, code is 798, comment is 111, blank is 177.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\cjs\popper-base.js.flow, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\cjs\popper-lite.js, code is 1044, comment is 132, blank is 231.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\cjs\popper-lite.js.flow, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\cjs\popper.js, code is 1504, comment is 152, blank is 313.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\cjs\popper.js.flow, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\createPopper.js, code is 200, comment is 32, blank is 36.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\contains.js, code is 17, comment is 4, blank is 6.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getBoundingClientRect.js, code is 13, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getClippingRect.js, code is 58, comment is 6, blank is 9.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getCompositeRect.js, code is 42, comment is 3, blank is 5.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getComputedStyle.js, code is 4, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getDocumentElement.js, code is 5, comment is 2, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getDocumentRect.js, code is 24, comment is 2, blank is 4.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getHTMLElementScroll.js, code is 6, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getLayoutRect.js, code is 18, comment is 4, blank is 5.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getNodeName.js, code is 3, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getNodeScroll.js, code is 11, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getOffsetParent.js, code is 44, comment is 9, blank is 15.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getParentNode.js, code is 14, comment is 8, blank is 2.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getScrollParent.js, code is 13, comment is 1, blank is 2.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getViewportRect.js, code is 26, comment is 13, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getWindow.js, code is 10, comment is 0, blank is 2.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getWindowScroll.js, code is 10, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\getWindowScrollBarX.js, code is 6, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\instanceOf.js, code is 17, comment is 1, blank is 5.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\isScrollParent.js, code is 8, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\isTableElement.js, code is 4, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\dom-utils\listScrollParents.js, code is 17, comment is 7, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\enums.js, code is 28, comment is 3, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\index.js, code is 5, comment is 3, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\applyStyles.js, code is 68, comment is 9, blank is 13.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\arrow.js, code is 82, comment is 6, blank is 18.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\computeStyles.js, code is 125, comment is 8, blank is 28.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\eventListeners.js, code is 41, comment is 2, blank is 8.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\flip.js, code is 123, comment is 3, blank is 23.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\hide.js, code is 55, comment is 1, blank is 6.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\index.js, code is 9, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\offset.js, code is 46, comment is 1, blank is 7.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\popperOffsets.js, code is 18, comment is 5, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\modifiers\preventOverflow.js, code is 102, comment is 8, blank is 16.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\popper-base.js, code is 2, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\popper-lite.js, code is 10, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\popper.js, code is 17, comment is 3, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\types.js, code is 0, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\computeAutoPlacement.js, code is 42, comment is 1, blank is 5.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\computeOffsets.js, code is 59, comment is 0, blank is 11.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\debounce.js, code is 14, comment is 0, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\detectOverflow.js, code is 58, comment is 4, blank is 5.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\expandToHashMap.js, code is 6, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\format.js, code is 8, comment is 0, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getAltAxis.js, code is 3, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getAltLen.js, code is 3, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getBasePlacement.js, code is 4, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getFreshSideObject.js, code is 8, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getMainAxisFromPlacement.js, code is 3, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getOppositePlacement.js, code is 11, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getOppositeVariationPlacement.js, code is 9, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\getVariation.js, code is 3, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\math.js, code is 3, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\mergeByName.js, code is 13, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\mergePaddingObject.js, code is 4, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\orderModifiers.js, code is 36, comment is 5, blank is 6.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\rectToClientRect.js, code is 8, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\uniqueBy.js, code is 10, comment is 0, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\validateModifiers.js, code is 61, comment is 0, blank is 15.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\esm\utils\within.js, code is 4, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\umd\popper-base.min.js, code is 1, comment is 4, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\umd\popper-base.min.js.flow, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\umd\popper-lite.min.js, code is 1, comment is 4, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\umd\popper-lite.min.js.flow, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\umd\popper.min.js, code is 1, comment is 4, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\@popperjs\core\dist\umd\popper.min.js.flow, code is 1, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap-grid.min.css, code is 1, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap-grid.rtl.min.css, code is 1, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap-reboot.min.css, code is 1, comment is 8, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap-reboot.rtl.min.css, code is 1, comment is 8, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap-utilities.min.css, code is 1, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap-utilities.rtl.min.css, code is 1, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap.min.css, code is 2, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\css\bootstrap.rtl.min.css, code is 2, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\js\bootstrap.bundle.min.js, code is 1, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\js\bootstrap.esm.min.js, code is 1, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\bootstrap\dist\js\bootstrap.min.js, code is 1, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\chartist-plugin-tooltips\dist\chartist-plugin-tooltip.css, code is 31, comment is 1, blank is 2.
+MyRemoteDeskWebApp\static\html\vendor\chartist-plugin-tooltips\dist\chartist-plugin-tooltip.min.js, code is 1, comment is 6, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\chartist\dist\chartist.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\chartist\dist\chartist.min.js, code is 2, comment is 7, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\bin\emcc, code is 9, comment is 0, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\bin\node-sass, code is 328, comment is 69, blank is 48.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\binding.gyp, code is 73, comment is 0, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\lib\binding.js, code is 11, comment is 6, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\lib\errors.js, code is 39, comment is 3, blank is 7.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\lib\extensions.js, code is 227, comment is 175, blank is 52.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\lib\index.js, code is 254, comment is 116, blank is 88.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\lib\render.js, code is 90, comment is 10, blank is 20.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\lib\watcher.js, code is 73, comment is 0, blank is 20.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\scripts\build.js, code is 96, comment is 30, blank is 28.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\scripts\install.js, code is 108, comment is 24, blank is 24.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\scripts\prepublish.js, code is 7, comment is 6, blank is 4.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\scripts\util\downloadoptions.js, code is 17, comment is 11, blank is 3.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\scripts\util\proxy.js, code is 6, comment is 15, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\scripts\util\useragent.js, code is 7, comment is 5, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\node-sass\vendor\darwin-x64-93\binding.node, it is a binary file.
+MyRemoteDeskWebApp\static\html\vendor\notyf\notyf.es.js, code is 373, comment is 62, blank is 6.
+MyRemoteDeskWebApp\static\html\vendor\notyf\notyf.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\notyf\notyf.min.js, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\notyf\notyf.umd.js, code is 379, comment is 62, blank is 8.
+MyRemoteDeskWebApp\static\html\vendor\nouislider\dist\nouislider.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\nouislider\dist\nouislider.min.js, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\onscreen\dist\index.js, code is 21, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\onscreen\dist\on-screen.es6.js, code is 270, comment is 71, blank is 63.
+MyRemoteDeskWebApp\static\html\vendor\onscreen\dist\on-screen.umd.min.js, code is 1, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\simplebar\dist\simplebar-core.esm.js, code is 677, comment is 85, blank is 147.
+MyRemoteDeskWebApp\static\html\vendor\simplebar\dist\simplebar.esm.js, code is 759, comment is 95, blank is 162.
+MyRemoteDeskWebApp\static\html\vendor\simplebar\dist\simplebar.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\simplebar\dist\simplebar.min.js, code is 1, comment is 8, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\simplebar\dist\simplebar.umd.js, code is 91, comment is 18, blank is 20.
+MyRemoteDeskWebApp\static\html\vendor\smooth-scroll\dist\smooth-scroll.min.js, code is 1, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\smooth-scroll\dist\smooth-scroll.polyfills.min.js, code is 1, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\sweetalert2\dist\sweetalert2.all.min.js, code is 2, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\sweetalert2\dist\sweetalert2.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\sweetalert2\dist\sweetalert2.min.js, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\css\datepicker-bs4.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\css\datepicker-bulma.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\css\datepicker-foundation.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\css\datepicker.min.css, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\datepicker-full.min.js, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\datepicker.min.js, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ar-tn.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ar.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\az.js, code is 13, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\bg.js, code is 10, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\bm.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\bn.js, code is 14, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\br.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\bs.js, code is 12, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ca.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\cs.js, code is 14, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\cy.js, code is 10, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\da.js, code is 14, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\de.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\el.js, code is 13, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\en-AU.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\en-CA.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\en-GB.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\en-IE.js, code is 14, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\en-NZ.js, code is 14, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\en-ZA.js, code is 14, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\eo.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\es.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\et.js, code is 13, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\eu.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\fa.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\fi.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\fo.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\fr-CH.js, code is 14, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\fr.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\gl.js, code is 13, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\he.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\hi.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\hr.js, code is 10, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\hu.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\hy.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\id.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\is.js, code is 10, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\it-CH.js, code is 13, comment is 7, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\it.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ja.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ka.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\kk.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\km.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ko.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\lt.js, code is 14, comment is 4, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\lv.js, code is 13, comment is 4, blank is 1.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\me.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\mk.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\mn.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\mr.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ms.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\nl-BE.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\nl.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\no.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\oc.js, code is 14, comment is 3, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\pl.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\pt-BR.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\pt.js, code is 13, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ro.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ru.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\si.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\sk.js, code is 13, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\sl.js, code is 11, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\sq.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\sr-latn.js, code is 12, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\sr.js, code is 12, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\sv.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\sw.js, code is 10, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\ta.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\tg.js, code is 14, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\th.js, code is 10, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\tk.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\tr.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\uk.js, code is 13, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\uz-cyrl.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\uz-latn.js, code is 14, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\vi.js, code is 12, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\zh-CN.js, code is 15, comment is 4, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\vanillajs-datepicker\dist\js\locales\zh-TW.js, code is 13, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\lib\jquery.waypoints.min.js, code is 1, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\lib\noframework.waypoints.min.js, code is 1, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\lib\shortcuts\infinite.min.js, code is 1, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\lib\shortcuts\inview.min.js, code is 1, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\lib\shortcuts\sticky.min.js, code is 1, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\lib\waypoints.debug.js, code is 33, comment is 6, blank is 7.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\lib\zepto.waypoints.min.js, code is 1, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\licenses.txt, code is 18, comment is 0, blank is 5.
+MyRemoteDeskWebApp\static\html\vendor\waypoints\testem.json, code is 19, comment is 0, blank is 5.
+MyRemoteDeskWebApp\static\src\assets\img\brand\dark.svg, code is 11, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\brand\light.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\android-chrome-192x192.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\android-chrome-512x512.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\apple-touch-icon.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\browserconfig.xml, code is 9, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\favicon-16x16.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\favicon-32x32.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\favicon.ico, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\manifest.json, code is 20, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\mstile-150x150.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\safari-pinned-tab.svg, code is 16, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\favicon\site.webmanifest, code is 19, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\aland-islands.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\albania.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\algeria.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\american-samoa.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\anguilla.svg, code is 56, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\argentina.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\armenia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\australia.svg, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\austria.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\azerbaijan.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\bahrain.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\belarus.svg, code is 46, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\belgium.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\bolivia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\bosnia-and-herzegovina.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\botswana.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\brazil.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\bulgaria.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\cambodia.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\cameroon.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\canada.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\chile.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\china.svg, code is 17, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\colombia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\costa-rica.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\croatia.svg, code is 61, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\cuba.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\cyprus.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\czech-republic.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\denmark.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\ecuador.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\egypt.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\estonia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\ethiopia.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\finland.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\france.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\georgia.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\germany.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\greece.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\haiti.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\hong-kong.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\hungary.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\iceland.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\india.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\indonesia.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\iran.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\iraq.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\ireland.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\israel.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\italy.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\ivory-coast.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\japan.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\kazakhstan.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\kuwait.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\latvia.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\liechtenstein.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\lithuania.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\luxembourg.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\malaysia.svg, code is 47, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\mexico.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\mongolia.svg, code is 49, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\montenegro.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\nauru.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\netherlands.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\nicaragua.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\nigeria.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\norway.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\pakistan.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\panama.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\paraguay.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\peru.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\philippines.svg, code is 44, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\portugal.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\puerto-rico.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\republic-of-macedonia.svg, code is 48, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\republic-of-poland.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\romania.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\russia.svg, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\serbia.svg, code is 46, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\singapore.svg, code is 45, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\slovakia.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\slovenia.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\south-africa.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\south-korea.svg, code is 56, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\spain.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\sri-lanka.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\sweden.svg, code is 42, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\switzerland.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\taiwan.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\thailand.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\tunisia.svg, code is 41, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\turkey.svg, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\ukraine.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\united-arab-emirates.svg, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\united-kingdom.svg, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\united-states-of-america.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\united-states.svg, code is 43, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\uruguay.svg, code is 47, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\venezuela.svg, code is 48, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\flags\vietnam.svg, code is 37, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\icons\github.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\icons\google-tag-manager.svg, code is 16, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\icons\google_analytics.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\illustrations\404.svg, code is 140, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\illustrations\500.svg, code is 138, comment is 0, blank is 5.
+MyRemoteDeskWebApp\static\src\assets\img\illustrations\bs5-illustrations.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\illustrations\signin.svg, code is 2090, comment is 0, blank is 15.
+MyRemoteDeskWebApp\static\src\assets\img\marker.svg, code is 2, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\mockup-calendar-presentation.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\mockup-kanban-presentation.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\mockup-map-presentation.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\mockup-presentation.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\404.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\500.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\forgot-password.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\lock.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\mockup-presentation.png, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\overview.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\reset-password.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\settings.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\sign-in.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\sign-up.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\pages\transactions.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\paypal-logo.svg, code is 45, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\profile-cover.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\team\profile-picture-1.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\team\profile-picture-2.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\team\profile-picture-3.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\team\profile-picture-4.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\team\profile-picture-5.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\team\profile-picture-6.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\technologies\bootstrap-5-logo.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\technologies\react-logo-primary.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\technologies\react-logo.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\technologies\vuejs-logo.svg, code is 8, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\themesberg-logo-alt.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\img\themesberg-mockup.jpg, it is a binary file.
+MyRemoteDeskWebApp\static\src\assets\img\themesberg.svg, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\assets\js\volt.js, code is 281, comment is 29, blank is 47.
+MyRemoteDeskWebApp\static\src\index.html, code is 374, comment is 19, blank is 3.
+MyRemoteDeskWebApp\static\src\pages\components\buttons.html, code is 263, comment is 35, blank is 15.
+MyRemoteDeskWebApp\static\src\pages\components\forms.html, code is 56, comment is 19, blank is 9.
+MyRemoteDeskWebApp\static\src\pages\components\modals.html, code is 325, comment is 46, blank is 12.
+MyRemoteDeskWebApp\static\src\pages\components\notifications.html, code is 255, comment is 18, blank is 30.
+MyRemoteDeskWebApp\static\src\pages\components\typography.html, code is 221, comment is 24, blank is 12.
+MyRemoteDeskWebApp\static\src\pages\dashboard\dashboard.html, code is 593, comment is 26, blank is 11.
+MyRemoteDeskWebApp\static\src\pages\examples\404.html, code is 36, comment is 18, blank is 7.
+MyRemoteDeskWebApp\static\src\pages\examples\500.html, code is 19, comment is 18, blank is 4.
+MyRemoteDeskWebApp\static\src\pages\examples\forgot-password.html, code is 25, comment is 19, blank is 5.
+MyRemoteDeskWebApp\static\src\pages\examples\lock.html, code is 52, comment is 21, blank is 8.
+MyRemoteDeskWebApp\static\src\pages\examples\reset-password.html, code is 64, comment is 25, blank is 8.
+MyRemoteDeskWebApp\static\src\pages\examples\sign-in.html, code is 92, comment is 23, blank is 8.
+MyRemoteDeskWebApp\static\src\pages\examples\sign-up.html, code is 100, comment is 25, blank is 8.
+MyRemoteDeskWebApp\static\src\pages\settings.html, code is 247, comment is 18, blank is 8.
+MyRemoteDeskWebApp\static\src\pages\tables\bootstrap-tables.html, code is 453, comment is 40, blank is 21.
+MyRemoteDeskWebApp\static\src\pages\transactions.html, code is 423, comment is 29, blank is 11.
+MyRemoteDeskWebApp\static\src\pages\upgrade-to-pro.html, code is 143, comment is 17, blank is 11.
+MyRemoteDeskWebApp\static\src\partials\_analytics.html, code is 15, comment is 3, blank is 2.
+MyRemoteDeskWebApp\static\src\partials\_analytics_body.html, code is 2, comment is 2, blank is 0.
+MyRemoteDeskWebApp\static\src\partials\_footer.html, code is 79, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\partials\_head.html, code is 31, comment is 8, blank is 7.
+MyRemoteDeskWebApp\static\src\partials\_navigation.html, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\partials\_pages-preview.html, code is 288, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\partials\_scripts.html, code is 15, comment is 13, blank is 12.
+MyRemoteDeskWebApp\static\src\partials\dashboard\_footer.html, code is 59, comment is 1, blank is 2.
+MyRemoteDeskWebApp\static\src\partials\dashboard\_nav.html, code is 10, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\partials\dashboard\_sidenav.html, code is 257, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\partials\dashboard\_topbar.html, code is 56, comment is 5, blank is 0.
+MyRemoteDeskWebApp\static\src\scss\custom\_variables.scss, code is 0, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\src\scss\volt.scss, code is 46, comment is 29, blank is 14.
+MyRemoteDeskWebApp\static\src\scss\volt\_components.scss, code is 30, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\scss\volt\_forms.scss, code is 4, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\scss\volt\_functions.scss, code is 15, comment is 2, blank is 6.
+MyRemoteDeskWebApp\static\src\scss\volt\_layout.scss, code is 5, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\scss\volt\_mixins.scss, code is 7, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\src\scss\volt\_utilities.scss, code is 93, comment is 1, blank is 1.
+MyRemoteDeskWebApp\static\src\scss\volt\_variables.scss, code is 1185, comment is 147, blank is 335.
+MyRemoteDeskWebApp\static\src\scss\volt\_vendor.scss, code is 5, comment is 1, blank is 0.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_accordions.scss, code is 34, comment is 7, blank is 11.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_alerts.scss, code is 9, comment is 0, blank is 1.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_animations.scss, code is 198, comment is 4, blank is 32.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_avatars.scss, code is 79, comment is 4, blank is 19.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_badge.scss, code is 77, comment is 8, blank is 13.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_body.scss, code is 25, comment is 0, blank is 6.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_breadcrumb.scss, code is 46, comment is 3, blank is 7.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_buttons.scss, code is 72, comment is 5, blank is 9.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_card.scss, code is 117, comment is 7, blank is 27.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_carousel.scss, code is 40, comment is 5, blank is 7.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_charts.scss, code is 44, comment is 1, blank is 7.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_close.scss, code is 27, comment is 3, blank is 3.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_custom-forms.scss, code is 79, comment is 7, blank is 17.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_datepicker.scss, code is 6, comment is 3, blank is 3.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_dropdown.scss, code is 50, comment is 3, blank is 15.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_icons.scss, code is 166, comment is 11, blank is 25.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_images.scss, code is 53, comment is 3, blank is 11.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_list-group.scss, code is 75, comment is 7, blank is 15.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_modal.scss, code is 28, comment is 3, blank is 5.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_nav.scss, code is 198, comment is 11, blank is 47.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_pagination.scss, code is 12, comment is 3, blank is 1.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_popover.scss, code is 11, comment is 4, blank is 4.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_progress.scss, code is 98, comment is 4, blank is 14.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_scrollbar.scss, code is 200, comment is 2, blank is 25.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_shapes.scss, code is 12, comment is 3, blank is 3.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_steps.scss, code is 49, comment is 3, blank is 9.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_tables.scss, code is 302, comment is 28, blank is 65.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_timelines.scss, code is 18, comment is 3, blank is 1.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_tooltip.scss, code is 36, comment is 1, blank is 5.
+MyRemoteDeskWebApp\static\src\scss\volt\components\_type.scss, code is 129, comment is 9, blank is 32.
+MyRemoteDeskWebApp\static\src\scss\volt\forms\_form-check.scss, code is 13, comment is 0, blank is 2.
+MyRemoteDeskWebApp\static\src\scss\volt\forms\_form-control.scss, code is 19, comment is 0, blank is 6.
+MyRemoteDeskWebApp\static\src\scss\volt\forms\_form-select.scss, code is 19, comment is 1, blank is 3.
+MyRemoteDeskWebApp\static\src\scss\volt\forms\_input-group.scss, code is 11, comment is 0, blank is 2.
+MyRemoteDeskWebApp\static\src\scss\volt\layout\_footer.scss, code is 84, comment is 3, blank is 18.
+MyRemoteDeskWebApp\static\src\scss\volt\layout\_navbar.scss, code is 326, comment is 8, blank is 80.
+MyRemoteDeskWebApp\static\src\scss\volt\layout\_section.scss, code is 146, comment is 7, blank is 11.
+MyRemoteDeskWebApp\static\src\scss\volt\layout\_sidebar.scss, code is 26, comment is 3, blank is 5.
+MyRemoteDeskWebApp\static\src\scss\volt\layout\_sidenav.scss, code is 156, comment is 3, blank is 32.
+MyRemoteDeskWebApp\static\src\scss\volt\mixins\_animations.scss, code is 42, comment is 0, blank is 3.
+MyRemoteDeskWebApp\static\src\scss\volt\mixins\_background-variant.scss, code is 21, comment is 1, blank is 3.
+MyRemoteDeskWebApp\static\src\scss\volt\mixins\_icon.scss, code is 15, comment is 0, blank is 2.
+MyRemoteDeskWebApp\static\src\scss\volt\mixins\_modals.scss, code is 21, comment is 0, blank is 2.
+MyRemoteDeskWebApp\static\src\scss\volt\mixins\_popover.scss, code is 33, comment is 0, blank is 3.
+MyRemoteDeskWebApp\static\src\scss\volt\mixins\_transform.scss, code is 13, comment is 2, blank is 4.
+MyRemoteDeskWebApp\static\src\scss\volt\mixins\_utilities.scss, code is 107, comment is 0, blank is 16.
+MyRemoteDeskWebApp\static\visuals\bootstrap.bundle.min.js, code is 1, comment is 6, blank is 0.
+MyRemoteDeskWebApp\static\visuals\Chart.bundle.min.js, code is 2, comment is 9, blank is 0.
+MyRemoteDeskWebApp\static\visuals\Chart.min.js, code is 5, comment is 9, blank is 0.
+MyRemoteDeskWebApp\static\visuals\custom.js, code is 4209, comment is 254, blank is 589.
+MyRemoteDeskWebApp\static\visuals\custom.min.js, code is 1, comment is 0, blank is 0.
+MyRemoteDeskWebApp\static\visuals\echarts.min.js, code is 12, comment is 18, blank is 0.
+MyRemoteDeskWebApp\templates\404.html, code is 87, comment is 19, blank is 25.
+MyRemoteDeskWebApp\templates\500.html, code is 33, comment is 5, blank is 6.
+MyRemoteDeskWebApp\templates\AddBoard.html, code is 32, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\AddEmp.html, code is 52, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\AddMeeting.html, code is 66, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\AddWorkProductivity.html, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\AssignProjEmp.html, code is 76, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\Attendance.html, code is 78, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\contact.html, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\CreateNotice.html, code is 37, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\CreateTask.html, code is 124, comment is 3, blank is 13.
+MyRemoteDeskWebApp\templates\EditEmp.html, code is 73, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EditWorkProductivity.html, code is 66, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\Emp_fp.html, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpChangePass.html, code is 49, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpDashboard.html, code is 298, comment is 14, blank is 35.
+MyRemoteDeskWebApp\templates\EmpDetails.html, code is 75, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpFpChangePass.html, code is 66, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\EmpFpVerifyOTP.html, code is 39, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpIndex.html, code is 18, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpLogin.html, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpNotices.html, code is 75, comment is 0, blank is 7.
+MyRemoteDeskWebApp\templates\EmpOverviewTasks.html, code is 55, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\EmpProfile.html, code is 72, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\EmpReportProblems.html, code is 54, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpSelectDepthMoniEmp.html, code is 28, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpSelectMoniEmp.html, code is 28, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpSelectPowerMoniEmp.html, code is 29, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpSelectSSMoniEmp.html, code is 29, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpSelectWp.html, code is 28, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpViewDepthMoniLogs.html, code is 59, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpViewMeeting.html, code is 54, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\EmpViewMoniLogs.html, code is 60, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpViewPowerMoniLogs.html, code is 74, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpViewProj.html, code is 54, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpViewProjectwiseTasks.html, code is 94, comment is 0, blank is 6.
+MyRemoteDeskWebApp\templates\EmpViewSSMoniLogs.html, code is 58, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\EmpViewTask.html, code is 71, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\EmpViewWorkProductivity.html, code is 167, comment is 0, blank is 13.
+MyRemoteDeskWebApp\templates\faq.html, code is 47, comment is 0, blank is 14.
+MyRemoteDeskWebApp\templates\includes\_messages.html, code is 10, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\includes\_navbar.html, code is 128, comment is 0, blank is 4.
+MyRemoteDeskWebApp\templates\index.html, code is 323, comment is 0, blank is 34.
+MyRemoteDeskWebApp\templates\layout.html, code is 67, comment is 17, blank is 24.
+MyRemoteDeskWebApp\templates\logsDashboard.html, code is 379, comment is 0, blank is 19.
+MyRemoteDeskWebApp\templates\Org_fp.html, code is 45, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\OrgChangePass.html, code is 48, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\OrgCreateProject.html, code is 40, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\OrgCreateTask.html, code is 39, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\OrgDashboard.html, code is 451, comment is 15, blank is 28.
+MyRemoteDeskWebApp\templates\OrgEmpLeave.html, code is 4, comment is 0, blank is 6.
+MyRemoteDeskWebApp\templates\OrgEmpLeavesTbl.html, code is 70, comment is 0, blank is 7.
+MyRemoteDeskWebApp\templates\OrgFpChangePass.html, code is 66, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\OrgFpVerifyOTP.html, code is 38, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\OrgIndex.html, code is 18, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\OrgLogin.html, code is 57, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\OrgRegister.html, code is 102, comment is 0, blank is 7.
+MyRemoteDeskWebApp\templates\OrgReportProblems.html, code is 51, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\OverviewNotices.html, code is 113, comment is 0, blank is 4.
+MyRemoteDeskWebApp\templates\OverviewTasks.html, code is 83, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\productivityRanks.html, code is 67, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\SelectDepthMoniEmp.html, code is 49, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\SelectMoniEmp.html, code is 49, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\SelectPowerMoniEmp.html, code is 50, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\SelectSSMoniEmp.html, code is 50, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\SelectWpEmp.html, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\unassign.html, code is 48, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\unassignemp.html, code is 56, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\UpdateEmp.html, code is 62, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\UpdateMeeting.html, code is 67, comment is 10, blank is 1.
+MyRemoteDeskWebApp\templates\UpdateNotice.html, code is 40, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\UpdateTask.html, code is 76, comment is 0, blank is 5.
+MyRemoteDeskWebApp\templates\UserApplyEmpLeaves.html, code is 50, comment is 0, blank is 10.
+MyRemoteDeskWebApp\templates\UserAttendance.html, code is 70, comment is 0, blank is 1.
+MyRemoteDeskWebApp\templates\UserViewEmpLeaves.html, code is 57, comment is 0, blank is 9.
+MyRemoteDeskWebApp\templates\verifyOTP.html, code is 34, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewBoards.html, code is 49, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewBoardwiseTasks.html, code is 64, comment is 0, blank is 2.
+MyRemoteDeskWebApp\templates\ViewDepthMoniLogs.html, code is 59, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewEmp.html, code is 76, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewMeeting.html, code is 53, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewMoniLogs.html, code is 60, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewNotices.html, code is 51, comment is 0, blank is 5.
+MyRemoteDeskWebApp\templates\ViewPowerMoniLogs.html, code is 73, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewProjects.html, code is 54, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewProjectwiseTasks.html, code is 93, comment is 0, blank is 5.
+MyRemoteDeskWebApp\templates\ViewSSMoniLogs.html, code is 58, comment is 0, blank is 0.
+MyRemoteDeskWebApp\templates\ViewTasks.html, code is 85, comment is 0, blank is 5.
+MyRemoteDeskWebApp\templates\ViewWorkProductivity.html, code is 167, comment is 0, blank is 13.
+===============================================================================

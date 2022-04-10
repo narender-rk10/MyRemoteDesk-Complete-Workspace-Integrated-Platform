@@ -1,0 +1,38 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">Add Work Productivity Dataset</h3>
+                    </div>
+                    <img src="/static/html/assets/img/undraw_data_processing_yrrv.png" width="250px" height="350px">
+                    <div class="card-body">
+                        <form action="/create-wp" method="POST">
+                            {% csrf_token %}
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label class="h6" for="exampleFormControlTextarea1">Add Work Productivity
+                                        App/Website:</label>
+                                    <input type="text" name="wp_ds" class="form-control"
+                                        placeholder="Add Work Productivity App/Website" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Type:</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
+                                        name="wp_type" required>
+                                        <option value="1">Productive</option>
+                                        <option value="0">Unproductive</option>
+                                    </select>
+                                </div>
+                                <input type="submit" class="btn btn-primary" value="Add">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

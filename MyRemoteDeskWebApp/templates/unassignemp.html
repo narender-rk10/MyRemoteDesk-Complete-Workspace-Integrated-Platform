@@ -1,0 +1,57 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    {% if msg is not none and msg %}
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">Unassign Employees for Project {{pname.upper}}</h3>
+                    </div>
+                    <br/>
+                <div class="table-responsive">
+                    <table class="table table-centered table-nowrap mb-0 rounded">
+                        <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Sr No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Unassign</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for result in msg %}
+                                <tr>
+                                <td>{{ forloop.counter }}</td>
+                                    <td>{{result.e_name.upper}}</td>
+                                    <td>
+                                        <form action="unassign-emp/{{result.id}}" method="POST">
+                                            {% csrf_token %}
+                                            <input type="number" value="{{pid}}" name="p_id" style="display:none;">
+                                        <button class="btn btn-danger">Unassign</button>
+                                        </form>
+                                    </td>
+                                    
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="col-lg-12 col-sm-16">
+                        <center>
+                            <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json"
+                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                            </lottie-player>
+                        </center>
+                        <h3 class="h3 text-center">
+                            No Records Found!
+                        </h3>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

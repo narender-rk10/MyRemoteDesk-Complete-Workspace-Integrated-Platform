@@ -1,0 +1,401 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<script src="/static/visuals/echarts.min.js"></script>
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    {% if employees is not none and employees %}
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">View Monitoring PieChart</h3>
+                    </div>
+<div class="form-group">
+    <label for="task-name">Employee Name</label>
+    <select name="e_id" class="form-control" id="e_id">
+        {% for employee in employees %}
+        <option value="{{employee.id}}">{{employee.e_name.upper}}</option>
+        {% endfor %}
+    </select>
+</div>
+<div class="form-group">
+    <label for="task-name">Date</label>
+    <input type="date" name="t_update_date" class="form-control" id="t_update_date" data-date-format="DD MMMM YYYY"> 
+</div>
+<div class="right_col" role="main" style="width: 100%;">
+    <div class="">
+<div class="col-md-4 col-sm-4  ">
+    <div class="x_panel"  style="min-width: 936px;
+    min-height: 475px;
+    width: fit-content;
+    height: fit-content;">
+      <div class="x_title">
+        <h2>App Usage</h2>
+        <ul class="nav navbar-right panel_toolbox">
+          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+            
+          </li>
+          <li><a class="close-link"><i class="fa fa-close"></i></a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+
+        <div id="echart_donut" style="height:350px;"></div>
+
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+{% else %}
+<div class="col-lg-12 col-sm-16">
+    <center>
+        <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json"
+            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+        </lottie-player>
+    </center>
+    <h3 class="h3 text-center">
+        No Records Found!
+    </h3>
+</div>
+{% endif %}
+</div>
+            </div>
+        </div>
+        </div>
+</div>
+    <
+<script>   
+    let all_app_names = {{app_names|safe}};
+    let all_app_usage_time = {{app_usage_time|safe}};
+    let all_eids = {{eids|safe}};
+    let all_dates = {{dates|safe}};
+
+    function makePie(){
+        let date = $("#t_update_date").val().replace(/-0+/g, '-');
+        let eid = $("#e_id").val();
+        console.log(date, 'date');
+        console.log(eid, 'eid');
+        let feed_to_chart = [];
+        let app_names = [];
+        let app_usage_time = [];
+        for(i=0; i<all_app_names.length; i++){
+            if(all_dates[i]==date && all_eids[i]==eid){
+                app_names.push(all_app_names[i]);
+                app_usage_time.push(all_app_usage_time[i]);
+            }
+        }
+        console.log(app_names, 'WOOFFFf');
+        for(i=0; i<app_names.length; i++){
+            feed_to_chart.push({'value':app_usage_time[i], 'name':app_names[i]});
+        }
+        console.log(feed_to_chart);
+
+        var theme = {
+                color: [
+                    '#26B99A', '#34495E', '#BDC3C7', '#3498DB',
+                    '#9B59B6', '#8abb6f', '#759c6a', '#bfd3b7'
+                ],
+
+                title: {
+                    itemGap: 8,
+                    textStyle: {
+                        fontWeight: 'normal',
+                        color: '#408829'
+                    }
+                },
+
+                dataRange: {
+                    color: ['#1f610a', '#97b58d']
+                },
+
+                toolbox: {
+                    color: ['#408829', '#408829', '#408829', '#408829']
+                },
+
+                tooltip: {
+                    backgroundColor: 'rgba(0,0,0,0.5)',
+                    axisPointer: {
+                        type: 'line',
+                        lineStyle: {
+                            color: '#408829',
+                            type: 'dashed'
+                        },
+                        crossStyle: {
+                            color: '#408829'
+                        },
+                        shadowStyle: {
+                            color: 'rgba(200,200,200,0.3)'
+                        }
+                    }
+                },
+
+                dataZoom: {
+                    dataBackgroundColor: '#eee',
+                    fillerColor: 'rgba(64,136,41,0.2)',
+                    handleColor: '#408829'
+                },
+                grid: {
+                    borderWidth: 0
+                },
+
+                categoryAxis: {
+                    axisLine: {
+                        lineStyle: {
+                            color: '#408829'
+                        }
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: ['#eee']
+                        }
+                    }
+                },
+
+                valueAxis: {
+                    axisLine: {
+                        lineStyle: {
+                            color: '#408829'
+                        }
+                    },
+                    splitArea: {
+                        show: true,
+                        areaStyle: {
+                            color: ['rgba(250,250,250,0.1)', 'rgba(200,200,200,0.1)']
+                        }
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: ['#eee']
+                        }
+                    }
+                },
+                timeline: {
+                    lineStyle: {
+                        color: '#408829'
+                    },
+                    controlStyle: {
+                        normal: { color: '#408829' },
+                        emphasis: { color: '#408829' }
+                    }
+                },
+
+                k: {
+                    itemStyle: {
+                        normal: {
+                            color: '#68a54a',
+                            color0: '#a9cba2',
+                            lineStyle: {
+                                width: 1,
+                                color: '#408829',
+                                color0: '#86b379'
+                            }
+                        }
+                    }
+                },
+                map: {
+                    itemStyle: {
+                        normal: {
+                            areaStyle: {
+                                color: '#ddd'
+                            },
+                            label: {
+                                textStyle: {
+                                    color: '#c12e34'
+                                }
+                            }
+                        },
+                        emphasis: {
+                            areaStyle: {
+                                color: '#99d2dd'
+                            },
+                            label: {
+                                textStyle: {
+                                    color: '#c12e34'
+                                }
+                            }
+                        }
+                    }
+                },
+                force: {
+                    itemStyle: {
+                        normal: {
+                            linkStyle: {
+                                strokeColor: '#408829'
+                            }
+                        }
+                    }
+                },
+                chord: {
+                    padding: 4,
+                    itemStyle: {
+                        normal: {
+                            lineStyle: {
+                                width: 1,
+                                color: 'rgba(128, 128, 128, 0.5)'
+                            },
+                            chordStyle: {
+                                lineStyle: {
+                                    width: 1,
+                                    color: 'rgba(128, 128, 128, 0.5)'
+                                }
+                            }
+                        },
+                        emphasis: {
+                            lineStyle: {
+                                width: 1,
+                                color: 'rgba(128, 128, 128, 0.5)'
+                            },
+                            chordStyle: {
+                                lineStyle: {
+                                    width: 1,
+                                    color: 'rgba(128, 128, 128, 0.5)'
+                                }
+                            }
+                        }
+                    }
+                },
+                gauge: {
+                    startAngle: 225,
+                    endAngle: -45,
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color: [[0.2, '#86b379'], [0.8, '#68a54a'], [1, '#408829']],
+                            width: 8
+                        }
+                    },
+                    axisTick: {
+                        splitNumber: 10,
+                        length: 12,
+                        lineStyle: {
+                            color: 'auto'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: 'auto'
+                        }
+                    },
+                    splitLine: {
+                        length: 18,
+                        lineStyle: {
+                            color: 'auto'
+                        }
+                    },
+                    pointer: {
+                        length: '90%',
+                        color: 'auto'
+                    },
+                    title: {
+                        textStyle: {
+                            color: '#333'
+                        }
+                    },
+                    detail: {
+                        textStyle: {
+                            color: 'auto'
+                        }
+                    }
+                },
+                textStyle: {
+                    fontFamily: 'Arial, Verdana, sans-serif'
+                }
+            };
+
+
+        var echartDonut = echarts.init(document.getElementById('echart_donut'), theme);
+
+        echartDonut.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            calculable: true,
+            legend: {
+                x: 'center',
+                y: 'bottom',
+                // data: ['Direct Access', 'E-mail Marketing', 'Union Ad', 'Video Ads', 'Search Engine']
+                data:app_names
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    magicType: {
+                        show: true,
+                        type: ['pie', 'funnel'],
+                        option: {
+                            funnel: {
+                                x: '25%',
+                                width: '50%',
+                                funnelAlign: 'center',
+                                max: 1548
+                            }
+                        }
+                    },
+                    restore: {
+                        show: true,
+                        title: "Restore"
+                    },
+                    saveAsImage: {
+                        show: true,
+                        title: "Save Image"
+                    }
+                }
+            },
+            series: [{
+                name: 'Access to the resource',
+                type: 'pie',
+                radius: ['35%', '55%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true
+                        },
+                        labelLine: {
+                            show: true
+                        }
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            position: 'center',
+                            textStyle: {
+                                fontSize: '14',
+                                fontWeight: 'normal'
+                            }
+                        }
+                    }
+                },
+                data:feed_to_chart
+                // data: [{
+                //     'value': 22,
+                //     'name': 'Direct Access'
+                // }, {
+                //     'value': 310,
+                //     'name': 'E-mail Marketing'
+                // }, {
+                //     'value': 234,
+                //     'name': 'Union Ad'
+                // }, {
+                //     'value': 135,
+                //     'name': 'Video Ads'
+                // }, {
+                //     'value': 1548,
+                //     'name': 'Search Engine'
+                // }]
+            }]
+        });
+            }
+
+        $('#t_update_date').on('change', function() {  makePie(); });
+        $('#e_id').on('change', function() {  makePie(); });
+  
+</script>
+
+{% endblock %}

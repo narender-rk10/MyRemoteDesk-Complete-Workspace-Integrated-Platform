@@ -1,0 +1,39 @@
+{
+	"name": "new-github-issue-url",
+	"version": "0.2.1",
+	"description": "Generate a URL for opening a new GitHub issue with prefilled title, body, and other fields",
+	"license": "MIT",
+	"repository": "sindresorhus/new-github-issue-url",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"github",
+		"issue",
+		"new",
+		"generate",
+		"url",
+		"gh",
+		"query",
+		"search",
+		"parameters",
+		"params"
+	],
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
+	}
+}

@@ -1,0 +1,66 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">View & Edit Tasks</h3>
+                    </div>
+                    <center>
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ikfeh6cd.json" background="transparent" speed="1"
+                            style="width: 400px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </center>
+                    <div class="container">
+                        <div class="row">
+                            {% for board in board_details %}
+                            {% for task in board.boardids.all %}
+                            <div class="col-lg-6 mb-2">
+                                <div class="card border-1 shadow p-4">
+                                    <div
+                                        class="card-header d-flex align-items-center justify-content-between border-0 p-0 mb-2">
+                                        <h3 class="h3 mb-0">{{task.t_name|upper}}</h3>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p>{{task.t_desc}}</p>
+
+                                        <h4 class="fs-6 fw-normal mt-4"><b>Project:</b>
+                                            {{task.p_id.p_name|upper}}</h4>
+
+                                        <h4 class="fs-6 fw-normal mt-4"><b>Assigned:</b>
+                                            {{task.e_id.e_name|upper}}</h4>
+                                        <h4 class="fs-6 fw-normal mt-4"><b>Priority:</b>
+                                            {% if task.t_priority == "High Priority" %}
+                                            <span class="badge bg-danger">High</span>
+                                            {% elif task.t_priority == "Medium Priority" %}
+                                            <span class="badge bg-warning">Medium</span>
+                                            {% elif task.t_priority == "Low Priority" %}
+                                            <span class="badge bg-info">Low</span>
+                                            {% endif %}
+                                        </h4>
+                                        <h5 class="fs-6 fw-normal mt-4"><b>Assigned Date:</b>
+                                            {{task.t_assign_date}}
+                                        </h5>
+                                        <h5 class="fs-6 fw-normal mt-4"><b>Deadline Date:</b>
+                                            {{ task.t_deadline_date}}
+                                        </h5>
+                                        <a href="/update-task/{{task.id}}" class="btn btn-warning">UPDATE</a>
+                                        <a href="/delete-task/{{task.id}}" class="btn btn-danger">DELETE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            {% endfor %}
+                            {% endfor %}
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

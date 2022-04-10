@@ -1,0 +1,82 @@
+{% extends 'EmpDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+  <div class="col-12 mb-4">
+    <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+      <div class="card-body align-items-center d-flex justify-content-center">
+        <div class="row mb-4">
+          <h3 class="h3 text-center">{{notices.0.o_id.o_name }} Notices</h3>
+                              <img src="/static/html/assets/img/undraw_News_re_6uub.png" width="250px" height="350px">
+                        {% if notices is not none and notices %}
+          <div class="col-lg-12 col-sm-16">
+          </div>
+          {% for notice in notices %}
+        <div class="card hover-state border-bottom rounded-0 py-3">
+          <div class="card-body d-sm-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+            <div class="col-1 text-left text-sm-center mb-2 mb-sm-0">
+              <div class="form-check check-lg inbox-check me-sm-2">
+                <img src="https://i.postimg.cc/4Nnt5Vnc/file.png">
+        
+        
+              </div>
+            </div>
+            <div class="col-11 col-lg-8 px-0 mb-4 mb-md-0">
+              <div class="mb-2">
+                <h3 class="h5">
+                  {{notice.on_title}}
+                </h3>
+                <div class="d-block d-sm-flex">
+                  <div>
+                    <h4 class="h6 fw-normal text-gray d-flex align-items-center mb-3 mb-sm-0">
+                      <svg class="icon icon-xxs text-gray-500 me-2" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+        
+                      {% load tz %}
+                      {% timezone "Asia/Kolkata" %}
+                      {{notice.on_date_time}}
+                      {% endtimezone %}
+        
+                    </h4>
+                  </div>
+        
+                </div>
+              </div>
+              <div>
+                <span class="fw-normal text-gray">
+                  {{notice.on_desc}}
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-2 col-lg-2 col-xl-2 d-none d-lg-block d-xl-inline-flex align-items-center ms-lg-auto text-right justify-content-end px-md-0">
+        
+            </div>
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        {% endfor %}
+          {% else %}
+          <div class="col-lg-12 col-sm-16">
+            <center>
+              <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json" background="transparent"
+                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+              </lottie-player>
+            </center>
+            <h3 class="h3 text-center">
+              No Records Found!
+            </h3>
+          </div>
+          {% endif %}
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+         
+          {% endblock %}

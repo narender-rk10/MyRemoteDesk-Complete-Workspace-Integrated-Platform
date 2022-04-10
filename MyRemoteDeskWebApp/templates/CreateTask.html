@@ -1,0 +1,140 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">Create Task</h3>
+                    </div>
+                    <div class="card-body">
+                        {% if boards is not none and boards and projects is not none and projects and employees is not none and employees %}
+                        <img src="/static/html/assets/img/undraw_Add_tasks_re_s5yj.png">
+                        <form action="/create-task" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="task-name">Task Name</label>
+                                <input type="text" name="t_name" class="form-control" id="t_name"
+                                    placeholder="Enter Task name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="task-name">Task Description</label>
+                                <textarea name="t_desc" class="form-control" id="t_desc" rows="6"
+                                    placeholder="Enter Task Description" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Task Priority:</label>
+                                <select name="t_priority" class="custom-select my-1 mr-sm-2"
+                                    id="inlineFormCustomSelectPref" id="t_priority" required>
+                                    <option value="High Priority">High Priority</option>
+                                    <option value="Medium Priority">Medium Priority</option>
+                                    <option value="Low Priority">Low Priority</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-name">Project Name:</label>
+                                <select name="p_id" class="custom-select my-1 mr-sm-2" id="p_id">
+                                    <option value="0" selected>Select</option>
+                                    {% for project in projects %}
+                                    <option value="{{project.id}}">{{project.p_name.upper}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="board-name">Board Name</label>
+                                <select name="b_id" class="custom-select my-1 mr-sm-2" id="b_id">
+                                    {% for board in boards %}
+                                    <option value="{{board.id}}">{{board.b_name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="task-name">Employee Name</label>
+                                <select name="e_id" class="custom-select my-1 mr-sm-2" id="e_id">
+                                    <!-- {% for employee in employees %}
+                <option value="{{employee.id}}">{{employee.e_name}}</option>
+                {% endfor %} -->
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="task-name">Task Assigned Date</label>
+                                <input type="date" id="start" name="t_assign_date" class="form-control"
+                                    id="t_assign_date" value="{{today}}" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="task-name">Task Deadline Date</label>
+                                <input type="date" id="start" name="t_deadline_date" class="form-control"
+                                    id="t_deadline_date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Create Task</button>
+                            </div>
+
+                        </form>
+                        {% else %}
+                        <div class="col-lg-12 col-sm-16">
+                            <center>
+                                <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json"
+                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                </lottie-player>
+                            </center>
+                            <h3 class="h3 text-center">
+                               For creating task, you should have at least one project, one board & one employee
+                            </h3>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#p_id').change(function () {
+            var pid = $('#p_id').val();
+            console.log(pid);
+            request_url = 'get_emps_by_project/' + pid;
+            $.ajax({
+                url: request_url,
+                success: function (data) {
+                    console.log(data);
+                    $('#e_id').html('<option selected="' + "selected" + '">' + '' + '</option>');
+                    for (let pid in data) {
+                        console.log(pid, data[pid]);
+                        $('#e_id').append('<option value="' + pid + '">' + data[pid] + '</option>');
+                    }
+                },
+                errors: function (e) {
+                    alert(e);
+                }
+            })
+        })
+    })
+    var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("t_deadline_date").setAttribute("min", today);
+</script>
+{% endblock %}

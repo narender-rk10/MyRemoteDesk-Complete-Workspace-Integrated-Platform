@@ -1,0 +1,66 @@
+{% extends 'EmpDashboard.html' %}
+{% block body %}
+
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">View Employee Leaves</h3>
+                    </div>
+                                        <center>
+                                            <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_hdiNFs.json" background="transparent" speed="1"
+                                                style="width: 400px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                        </center>
+                    <div class="table-responsive">
+                        <table id="example" class="display" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col"> Id </th>
+                                    <th scope="col">Leave Reason</th>
+                                    <th scope="col">Leave Description</th>
+                                    <th scope="col">Leave Start Date</th>
+                                    <th scope="col">Number of Days</th>
+                                    <th scope="col">Leave Status</th>
+                                    
+                                    
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for leave in leaves %}
+                                <tr>
+                                    <td>{{ leave.id }}</td>
+                                    <td>{{leave.l_reason}}</td>
+                                    <td>{{leave.l_desc}}</td>
+                                    <td>{{leave.l_start_date}}</td>
+                                    <td>{{leave.l_no_of_leaves}}</td>
+                                    <td>{{leave.l_status}}</td>
+
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+    });
+</script>
+
+
+{% endblock %}

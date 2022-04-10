@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+{% block body %}
+<main>
+    <section class="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
+        <div class="container">
+            <div class="row justify-content-center form-bg-image"
+                data-background-lg="../../assets/img/illustrations/signin.svg">
+                {% if details == "0" %}
+                <div class="alert alert-danger" role="alert">
+                    Invalid Email/Password or some error was occurred!
+                </div>
+                {% endif %}
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                        <div class="text-center text-md-center mb-4 mt-md-0">
+                            <h1 class="mb-0 h3">Organization Login</h1>
+                        </div>
+                        <img src="/static/html/assets/img/secure_login.png">
+                        <form method="POST" action="/LoginOrg" class="mt-4">
+                            {% csrf_token %}
+                            <div class="form-group mb-4">
+                                <label for="email">Your Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><span class="fas fa-envelope"></span></span>
+                                    <input type="email" name="o_email" class="form-control" placeholder="example@company.com" id="email" autofocus required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group mb-4">
+                                    <label for="password">Your Password</label>
+                                    <div class="input-group">
+                                    <span class="input-group-text"><span class="fas fa-lock"></span></span>
+                                        <input type="password" name="o_pass" placeholder="Password" class="form-control"
+                                            id="password" required>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-top mb-4">
+                                    <div><a href="/org-forgot-password" class="small text-right">Forgot password?</a></div>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-gray-800">Sign in</button>
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <span class="fw-normal">
+                                Not registered?
+                                <a href="/SignUpOrg" class="fw-bold">Create account</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

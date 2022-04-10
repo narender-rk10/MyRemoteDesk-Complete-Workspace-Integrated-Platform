@@ -1,0 +1,20 @@
+{
+  "name": "my-remote-desk",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "electron-active-window": "^0.0.6",
+    "electron-get-location": "^1.0.1",
+    "mysql": "^2.18.1",
+    "python-shell": "^3.0.1"
+  }
+}

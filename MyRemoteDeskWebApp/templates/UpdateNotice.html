@@ -1,0 +1,40 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">Update Tasks</h3>
+                    </div>
+                    <center>
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_2jbzmbru.json"
+                            background="transparent" speed="1" style="width: 400px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </center>
+                    <div class="card-body">
+                        <form action="/update-notice/{{noticeObj.id}}/" method="POST" class="form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <h3 class="h3 text-center">Update Notice</h3>
+                                <label for="Notice-name">Notice Name</label>
+                                <input type="text" name="on_title" class="form-control" id="on_title"
+                                    placeholder="Enter Title" value="{{noticeObj.on_title}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="Notice-desc">Notice Description</label>
+                                <textarea name="on_desc" class="form-control" id="on_desc" rows="6"
+                                    placeholder="Enter Description">{{noticeObj.on_desc}}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Update Notice</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,180 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="static/visuals/Chart.min.js"></script>
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <input type="hidden" id="e_id" value="{{msg2}}">
+                    <input type="hidden" id="t_update_date" value="{{msg3}}">
+                    <input type="hidden" id="o_id" value="{{request.session.o_id}}">
+                    {% if msg is not none and msg %}
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">View Work Productivity</h3>
+                    </div>
+                    <img src="/static/html/assets/img/undraw_Data_extraction_re_0rd3.png" width="250px" height="350px">
+                    <div class="row">
+                        <div class="col-lg-3 mb-2">
+                            <div class="card" style="border-radius: 18px;">
+                                <div class="card-body" style="border-radius: 18px;">
+                                    <h4 class="text-center">Total Time Spent: {{msg6}} seconds</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <div class="card" style="border-radius: 18px;">
+                                <div class="card-body" style="border-radius: 18px;">
+                                    <h4 class="text-center">Productive Time: {{msg1}} seconds</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <div class="card" style="border-radius: 18px;">
+                                <div class="card-body" style="border-radius: 18px;">
+                                    <h4 class="text-center">UnProductive Time: {{msg4}} seconds</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <div class="card" style="border-radius: 18px;">
+                                <div class="card-body" style="border-radius: 18px;">
+                                    <h4 class="text-center">Undefined Time: {{msg5}} seconds</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table id="example" class="display nowrap" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Sr. No.</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Productivity</th>
+                                    <th scope="col">Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for title, result, time in msg %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{title}}</td>
+                                    {% if result == 1 %}
+                                    <td class="badge bg-success">Productive</td>
+                                    {% elif result == 2 %}
+                                    <td class="badge bg-danger">Unproductive</td>
+                                    {% elif result == 3 %}
+                                    <td class="badge bg-warning">Undefined</td>
+                                    {% endif %}
+                                    <td>{{time}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="x_content" width="400px" height="500px">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    {% else %}
+                    <div class="col-lg-12 col-sm-16">
+                        <center>
+                            <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json"
+                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                            </lottie-player>
+                        </center>
+                        <h3 class="h3 text-center">
+                            No Records Found!
+                        </h3>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+    });
+
+    console.log('Function Executing.....');
+    let date = $("#t_update_date").val().replace(/-0+/g, '-');
+    let eid = $("#e_id").val();
+    let oid = $("#o_id").val();
+    let eidanddate = eid + 'and' + date + 'and' + oid;
+    console.log(eidanddate);
+    request_url = 'get_prod_details/' + eidanddate;
+    $.ajax({
+        url: request_url,
+        success: function (data) {
+            console.log("Responsee");
+            let prd_total = data['prd_total'];
+            let unprd_total = data['unprd_total'];
+            let undef_total = data['undef_total'];
+            let total_time = undef_total + unprd_total + prd_total;
+            makePie(prd_total, unprd_total, undef_total);
+            console.log(total_time);
+            $('#totaltime').html('Total time spent: ' + secondsToTime(total_time.toString()) + ' hours');
+        },
+        errors: function (e) {
+            alert(e);
+        }
+    })
+
+    $("#updateContentBtn").click(fetchProds).preventDefault();
+
+    function makePie(prd_total, unprd_total, undef_total) {
+        var ctx = document.getElementById("pieChart");
+        var data = {
+            datasets: [{
+                data: [prd_total, unprd_total, undef_total],
+                backgroundColor: [
+                    "#26B99A",
+                    // "#9B59B6",
+                    "#FF0000",
+                    "#BDC3C7"
+
+                    // "#3498DB"
+                ],
+                label: 'My dataset' // for legend
+            }],
+            labels: [
+                "Productive Apps",
+                // "Purple",
+                "Unproductive Apps",
+                "Undefined Apps",
+                // "Blue"
+            ]
+        };
+
+        var pieChart = new Chart(ctx, {
+            data: data,
+            type: 'pie',
+            otpions: {
+                legend: false
+            }
+        });
+    }
+
+    function secondsToTime(secs) {
+        var hours = Math.floor(secs / (60 * 60));
+
+        var divisor_for_minutes = secs % (60 * 60);
+        var minutes = Math.floor(divisor_for_minutes / 60);
+
+        var divisor_for_seconds = divisor_for_minutes % 60;
+        var seconds = Math.ceil(divisor_for_seconds);
+
+        return hours.toString() + ':' + minutes.toString() + ':' + seconds.toString();
+    }
+</script>
+
+{% endblock %}

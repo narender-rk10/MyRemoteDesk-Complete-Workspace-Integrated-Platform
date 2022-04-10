@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block body %}
+<main>
+    <section class="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
+        <div class="container">
+            <div class="row justify-content-center form-bg-image"
+                data-background-lg="../../assets/img/illustrations/signin.svg">
+                {% if msg == "0" %}
+                <div class="alert alert-danger" role="alert">
+                    Email was not found!
+                </div>
+                {% endif %}
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                        <div class="text-center text-md-center mb-4 mt-md-0">
+                            <h1 class="mb-0 h3">Forgot Password for User</h1>
+                        </div>
+                        <img src="/static/html/assets/img/forgot_password.png">
+                        <form method="POST" action="/user-forgot-password" class="mt-4">
+                            {% csrf_token %}
+                            <div class="form-group mb-4">
+                                <label for="email">Your Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><span class="fas fa-envelope"></span></span>
+                                    <input type="email" name="e_email" class="form-control"
+                                        placeholder="example@company.com" id="email" autofocus required>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-gray-800">Request for Forgot Password</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

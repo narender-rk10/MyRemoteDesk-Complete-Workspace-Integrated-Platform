@@ -1,0 +1,49 @@
+{% extends 'OrgDashboard.html' %}
+{% block body %}
+<div class="row align-items-center d-flex  justify-content-center">
+    <div class="col-12 mb-4">
+        <div class="card border-light shadow-sm components-section align-items-center d-flex  justify-content-center">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-lg-12 col-sm-16">
+                        <h3 class="h3 text-center">Unassign Employee from Project</h3>
+                    </div>
+                    <div class="card-body">
+                        {% if msg is not none and msg %}
+                        <center>
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ihsy8p2a.json"
+                                background="transparent" speed="1" style="width: 400px; height: 300px;" loop autoplay>
+                            </lottie-player>
+                        </center>
+                        <form action="/unassign-employee" method="POST">
+                            {% csrf_token %}
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label class="my-1 mr-2" for="livebox1">Choose Project:</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="livebox1" name="p_id">
+                                        {% for test1 in msg %}
+                                        <option value={{test1.id}}>{{test1.p_name.upper}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <input type="submit" class="btn btn-primary" value="Select">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>{% else %}
+    <div class="col-lg-12 col-sm-16">
+        <center>
+            <lottie-player src="https://assets7.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json"
+                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+            </lottie-player>
+        </center>
+        <h3 class="h3 text-center">
+            To unassign employee from project, there should be at least one employee
+        </h3>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
