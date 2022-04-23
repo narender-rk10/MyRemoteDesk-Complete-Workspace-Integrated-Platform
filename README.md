@@ -32,6 +32,8 @@ python manage.py migrate
 python manage.py runserver
 
 Check on localhost:8000
+
+Change domain credentials in <a rel="license" href="https://github.com/narender-rk10/MyRemoteDesk-Complete-Workspace-Integrated-Platform/blob/master/MyRemoteDeskWebApp/MyRemoteDesk/settings.py">settings.py</a> for email service.
 </code>
 </pre>
 
